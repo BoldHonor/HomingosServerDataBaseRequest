@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.Networking;
 public class ApiData : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -20,13 +20,21 @@ public class ApiData : MonoBehaviour
     }
 
     public TextAsset jsonFile;
+    string retiriveData = "https://run.mocky.io/v3/6027ded7-2411-4fb0-8433-efc50814abd7" ;
+
 
     void Start()
     {
+        UnityWebRequest retrivedRequestData = UnityWebRequest.Get(retiriveData);
+        if(retrivedRequestData.isNetworkError)
+        {
+            Debug.Log("cant retrive Data"); 
+        }
 
         string str = File.ReadAllText(Application.dataPath + "/data.txt");
-        Debug.Log(str);
-        Resources res = JsonUtility.FromJson<Resources>(jsonFile.text);
+        Debug.Log(retrivedRequestData.downloadHandler.text);
+        retrivedRequestData.Send();
+        Resources res = JsonUtility.FromJson<Resources>(retrivedRequestData.downloadHandler.text);
         Debug.Log(res.resources[1].type);
         
     }
