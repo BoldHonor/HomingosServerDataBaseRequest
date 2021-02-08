@@ -1,0 +1,29 @@
+{
+	"resources":[
+		{
+			"type" : "image",
+			"url" : "https://res.cloudinary.com/ddz3ysles/image/upload/v1593782166/samples/animals/three-dogs.jpg",
+			"caption" : "You can't buy happiness, but you can rescue it."
+		},
+				{
+			"type" : "video",
+			"url" : "https://res.cloudinary.com/ddz3ysles/video/upload/v1593953307/samples/videos/sea-turtle_yalosx.mp4",
+			"caption" : "The Turtle's teachings are so beautiful."
+		},
+				{
+			"type" : "image",
+			"url" : "https://res.cloudinary.com/ddz3ysles/image/upload/v1593782162/samples/animals/reindeer.jpg",
+			"caption" : ""
+		},
+				{
+			"type" : "video",
+			"url" : "https://res.cloudinary.com/ddz3ysles/video/upload/v1593953311/samples/videos/elephants_tp9v6j.mp4",
+			"caption" : "The Turtle's teachings are so beautiful. "
+		},
+				{
+			"type" : "image",
+			"url" : "https://res.cloudinary.com/ddz3ysles/image/upload/v1593782164/samples/landscapes/girl-urban-view.jpg",
+			"caption" : "When we are children we seldom think of the future."
+		}
+	]
+}
