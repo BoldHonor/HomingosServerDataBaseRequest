@@ -4,7 +4,13 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Main Menu.unity
+    guid: 93347854200e68a40b0da4f7138e5f21
+  - enabled: 1
+    path: Assets/Scenes/PrakharHomingos Assignment.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 21c030c65b5ece246939819e050448c9,
       type: 2}
