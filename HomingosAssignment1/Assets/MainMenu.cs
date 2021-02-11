@@ -23,14 +23,14 @@ public class MainMenu : MonoBehaviour
 
     public void onAppStart()
     {
-        if(UrlText.GetComponent <UnityEngine.UI.Text>().text == "")
+        if(UrlText.GetComponent <UnityEngine.UI.InputField>().text == "")
         {
             retiriveData = "https://run.mocky.io/v3/6027ded7-2411-4fb0-8433-efc50814abd7";
 
         }
         else
         {
-            retiriveData = UrlText.GetComponent<UnityEngine.UI.Text>().text;
+            retiriveData = UrlText.GetComponent<UnityEngine.UI.InputField>().text;
         }
 
         SceneManager.LoadScene("PrakharHomingos Assignment");
